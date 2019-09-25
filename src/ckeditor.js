@@ -16,19 +16,18 @@ import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
-import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -42,13 +41,12 @@ ClassicEditor.builtinPlugins = [
 	EasyImage,
 	Heading,
 	Image,
-	ImageCaption,
+	ImageResize,
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
 	Link,
 	List,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
@@ -63,23 +61,31 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'|',
 			'link',
+			'imageUpload',
+			'|',
 			'bulletedList',
 			'numberedList',
-			'imageUpload',
 			'blockQuote',
+			'|',
 			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
+		]
+	},
+	heading: {
+		options: [
+			{ model: 'paragraph', title: 'Paragraph' },
+			{ model: 'heading2', view: 'h2', title: 'Heading 2' },
+			{ model: 'heading3', view: 'h3', title: 'Heading 3' },
+			{ model: 'heading4', view: 'h4', title: 'Heading 4' },
+			{ model: 'heading5', view: 'h5', title: 'Heading 5' },
+			{ model: 'heading6', view: 'h6', title: 'Heading 6' },
 		]
 	},
 	image: {
 		toolbar: [
 			'imageStyle:full',
 			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
 		]
 	},
 	table: {
@@ -90,5 +96,5 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'zh-CN'
 };
