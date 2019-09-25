@@ -33,6 +33,14 @@
     "@ckeditor/ckeditor5-core" "^12.3.0"
     "@ckeditor/ckeditor5-upload" "^12.0.0"
 
+"@ckeditor/ckeditor5-alignment@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-alignment/download/@ckeditor/ckeditor5-alignment-11.2.0.tgz#b1d0b66c3d8ff120ec367facffde65495a63faaf"
+  integrity sha1-sdC2bD2P8SDsNn+s/95lSVpj+q8=
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.3.0"
+    "@ckeditor/ckeditor5-ui" "^14.0.0"
+
 "@ckeditor/ckeditor5-autoformat@^11.0.5":
   version "11.0.5"
   resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-autoformat/download/@ckeditor/ckeditor5-autoformat-11.0.5.tgz#4c866d9ff4a613676d6cece54d7aa06fd699b182"
@@ -173,6 +181,15 @@
     "@ckeditor/ckeditor5-typing" "^12.2.0"
     "@ckeditor/ckeditor5-undo" "^11.0.5"
 
+"@ckeditor/ckeditor5-font@^11.2.2":
+  version "11.2.2"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-font/download/@ckeditor/ckeditor5-font-11.2.2.tgz#5bd6e935dda3a906b2bc41f26610285cc52f978e"
+  integrity sha1-W9bpNd2jqQayvEHyZhAoXMUvl44=
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.3.0"
+    "@ckeditor/ckeditor5-ui" "^14.0.0"
+    "@ckeditor/ckeditor5-utils" "^14.0.0"
+
 "@ckeditor/ckeditor5-heading@^11.0.5":
   version "11.0.5"
   resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-heading/download/@ckeditor/ckeditor5-heading-11.0.5.tgz#ac821014c4027577f9ffe097235cd7c80f890601"
@@ -194,6 +211,14 @@
     "@ckeditor/ckeditor5-upload" "^12.0.0"
     "@ckeditor/ckeditor5-utils" "^14.0.0"
     "@ckeditor/ckeditor5-widget" "^11.1.0"
+
+"@ckeditor/ckeditor5-indent@^10.1.0":
+  version "10.1.0"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-indent/download/@ckeditor/ckeditor5-indent-10.1.0.tgz#4084d232607faf0a9f9da9c397f71d19eec7b5e0"
+  integrity sha1-QITSMmB/rwqfnanDl/cdGe7HteA=
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.3.0"
+    "@ckeditor/ckeditor5-utils" "^14.0.0"
 
 "@ckeditor/ckeditor5-link@^11.1.2":
   version "11.1.2"
@@ -247,6 +272,16 @@
     "@ckeditor/ckeditor5-clipboard" "^12.0.2"
     "@ckeditor/ckeditor5-core" "^12.3.0"
     "@ckeditor/ckeditor5-engine" "^14.0.0"
+
+"@ckeditor/ckeditor5-remove-format@^10.0.4":
+  version "10.0.4"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-remove-format/download/@ckeditor/ckeditor5-remove-format-10.0.4.tgz#232d470b838cb602928ddc0a3bcb2df766a72c5c"
+  integrity sha1-Iy1HC4OMtgKSjdwKO8st92anLFw=
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.3.0"
+    "@ckeditor/ckeditor5-ui" "^14.0.0"
+    "@ckeditor/ckeditor5-utils" "^14.0.0"
+    eslint-plugin-ckeditor5-rules "^0.0.2"
 
 "@ckeditor/ckeditor5-table@^14.0.0":
   version "14.0.0"
@@ -1809,6 +1844,11 @@ eslint-config-ckeditor5@^2.0.0:
   integrity sha1-0C3EWZlmQsv4rg3RvKDYcw/Dtrg=
   dependencies:
     eslint-plugin-ckeditor5-rules "^0.0.3"
+
+eslint-plugin-ckeditor5-rules@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-ckeditor5-rules/download/eslint-plugin-ckeditor5-rules-0.0.2.tgz#f6325c6d046b41f05423c3a18bb9794b37c80baf"
+  integrity sha1-9jJcbQRrQfBUI8Ohi7l5SzfIC68=
 
 eslint-plugin-ckeditor5-rules@^0.0.3:
   version "0.0.3"

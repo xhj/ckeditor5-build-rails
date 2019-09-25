@@ -12,8 +12,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -26,6 +25,12 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -37,20 +42,24 @@ ClassicEditor.builtinPlugins = [
 	Bold,
 	Italic,
 	BlockQuote,
-	CKFinder,
-	EasyImage,
 	Heading,
 	Image,
 	ImageResize,
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	SimpleUploadAdapter,
 	Link,
 	List,
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	RemoveFormat,
+	Font,
+	Indent,
+	IndentBlock,
+	Alignment
 ];
 
 // Editor configuration.
@@ -61,15 +70,25 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'strikethrough',
+			'code',
+			'fontColor',
 			'|',
 			'link',
 			'imageUpload',
+			'|',
+			'outdent',
+			'indent',
+			'alignment',
 			'|',
 			'bulletedList',
 			'numberedList',
 			'blockQuote',
 			'|',
 			'insertTable',
+			'|',
+			'removeFormat',
+			''
 		]
 	},
 	heading: {
@@ -94,6 +113,12 @@ ClassicEditor.defaultConfig = {
 			'tableRow',
 			'mergeTableCells'
 		]
+	},
+	simpleUpload: {
+		uploadUrl: '/uploads',
+		headers: {
+			'X-CSRF-TOKEN': document.querySelector("meta[name='csrf-token']").getAttribute('content'),
+		}
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'zh-CN'
