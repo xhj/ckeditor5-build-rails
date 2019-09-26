@@ -41,7 +41,7 @@ public
   </head>
 </html>
 ```
-    
+
 
 In your JavaScript application:
 
