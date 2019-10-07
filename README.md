@@ -46,25 +46,56 @@ public
 In your JavaScript application:
 
 ```js
+# app/javascript/packs/index.js
 document.addEventListener('turbolinks:load', () => {
-  ClassicEditor
-    .create(document.querySelector('.ckeditor'), {
-      simpleUpload: {
-        uploadUrl: '/uploads',
-      },
-    })
+  # Init CKEditor
+  ClassicEditor.create(document.querySelector('.ckeditor'), {
+    simpleUpload: { uploadUrl: '/uploads' },
+  })
 })
 ```
 
 In your Rails controller:
 
 ```rb
+# app/controllers/uploads_controller.rb
 class UploadsController < ApplicationController
-	# POST /uploads
+  # POST /uploads { upload: <File> }
   def create
     uploader = FileUploader.new
     uploader.store!(params[:upload])
     render json: { url: uploader.url }
   end
 end
+```
+
+You need a [CarrierWave](https://github.com/carrierwaveuploader/carrierwave) Uploader:
+
+```rb
+# app/uploaders/file_uploader.rb
+class FileUploader < BaseUploader
+  def store_dir
+    "uploads"
+  end
+
+  def filename
+    "files/#{Time.now.strftime("%Y%m")}/#{secure_token}.#{file.extension}" if original_filename.present?
+  end
+
+  protected
+    # Generate a random key like ActiveStoreage
+    def secure_token
+      return SecureRandom.base58(32) if model.nil?
+      var = :"@#{mounted_as}_secure_token"
+      model.instance_variable_get(var) || model.instance_variable_set(var, SecureRandom.base58(32))
+    end
+end
+```
+
+In your edit form:
+
+```erb
+<%= form_for @post do |f| %>
+  <%= f.text_area :body, class: "ckeditor" %>
+<% end %>
 ```
