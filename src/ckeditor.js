@@ -120,6 +120,71 @@ ClassicEditor.defaultConfig = {
 			'X-CSRF-TOKEN': document.querySelector("meta[name='csrf-token']").getAttribute('content'),
 		}
 	},
+	fontColor: {
+		colors: [
+			{
+				color: '#000000',
+				label: 'Black'
+			},
+			{
+				color: '#424242',
+				label: 'Dim grey'
+			},
+			{
+				color: '#757575',
+				label: 'Grey'
+			},
+			{
+				color: '#BDBDBD',
+				label: 'Light grey'
+			},
+			{
+				color: '#fff',
+				label: 'White',
+				hasBorder: true
+			},
+			{
+				color: '#D50000',
+				label: 'Red'
+			},
+			{
+				color: "#E91E63",
+				label: "Pink"
+			},
+			{
+				color: '#9C27B0',
+				label: 'Purple'
+			},
+			{
+				color: "#3F51B5",
+				label: "Indigo"
+			},
+			{
+				color: '#2196F3',
+				label: 'Blue'
+			},
+			{
+				color: '#03A9F4',
+				label: 'Light blue'
+			},
+			{
+				color: '#018D00',
+				label: 'Green'
+			},
+			{
+				color: '#AEEA00',
+				label: 'Light green'
+			},
+			{
+				color: '#FFEB3B',
+				label: 'Yellow'
+			},
+			{
+				color: '#FF5722',
+				label: 'Orange'
+			}
+		]
+	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'zh-CN'
 };
