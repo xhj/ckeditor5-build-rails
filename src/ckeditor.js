@@ -30,6 +30,8 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import AutoSave from '@ckeditor/ckeditor5-autosave/src/autosave';
+
 
 
 export default class ClassicEditor extends ClassicEditorBase { }
@@ -59,6 +61,7 @@ ClassicEditor.builtinPlugins = [
 	Font,
 	Indent,
 	IndentBlock,
+	AutoSave,
 	Alignment
 ];
 

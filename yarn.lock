@@ -48,6 +48,15 @@
   dependencies:
     "@ckeditor/ckeditor5-core" "^12.3.0"
 
+"@ckeditor/ckeditor5-autosave@^11.0.5":
+  version "11.0.5"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-autosave/download/@ckeditor/ckeditor5-autosave-11.0.5.tgz#87790cb36dc90425543c3038506b16151d16f42d"
+  integrity sha1-h3kMs23JBCVUPDA4UGsWFR0W9C0=
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.3.0"
+    "@ckeditor/ckeditor5-utils" "^14.0.0"
+    lodash-es "^4.17.10"
+
 "@ckeditor/ckeditor5-basic-styles@^11.1.4":
   version "11.1.4"
   resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-basic-styles/download/@ckeditor/ckeditor5-basic-styles-11.1.4.tgz#8b855ccc45122dede8fd8c7c269152d66033dfd5"
