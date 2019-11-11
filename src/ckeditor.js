@@ -32,8 +32,6 @@ import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import AutoSave from '@ckeditor/ckeditor5-autosave/src/autosave';
 
-
-
 export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
@@ -120,7 +118,7 @@ ClassicEditor.defaultConfig = {
 	simpleUpload: {
 		uploadUrl: '/uploads',
 		headers: {
-			'X-CSRF-TOKEN': document.querySelector("meta[name='csrf-token']").getAttribute('content'),
+			'X-CSRF-TOKEN': document.querySelector( 'meta[name=\'csrf-token\']' ).getAttribute( 'content' ),
 		}
 	},
 	fontColor: {
@@ -151,16 +149,16 @@ ClassicEditor.defaultConfig = {
 				label: 'Red'
 			},
 			{
-				color: "#E91E63",
-				label: "Pink"
+				color: '#E91E63',
+				label: 'Pink'
 			},
 			{
 				color: '#9C27B0',
 				label: 'Purple'
 			},
 			{
-				color: "#3F51B5",
-				label: "Indigo"
+				color: '#3F51B5',
+				label: 'Indigo'
 			},
 			{
 				color: '#2196F3',
