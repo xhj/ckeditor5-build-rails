@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-rails",
-  "version": "15.0.1",
+  "version": "18.0.0",
   "description": "CKEditor 5 all in one package for Rails application.",
   "keywords": [
     "ckeditor5-rails",
