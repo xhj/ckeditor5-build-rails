@@ -103,9 +103,12 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
+		toolbar: ['imageTextAlternative', '|', 'imageStyle:alignLeft', 'imageStyle:full', 'imageStyle:alignRight'],
+		styles: [
+			'full',
+			'alignLeft',
+			'alignCenter',
+			'alignRight'
 		]
 	},
 	table: {
@@ -118,7 +121,7 @@ ClassicEditor.defaultConfig = {
 	simpleUpload: {
 		uploadUrl: '/uploads',
 		headers: {
-			'X-CSRF-TOKEN': document.querySelector( 'meta[name=\'csrf-token\']' ).getAttribute( 'content' ),
+			'X-CSRF-TOKEN': document.querySelector('meta[name=\'csrf-token\']').getAttribute('content'),
 		}
 	},
 	fontColor: {
