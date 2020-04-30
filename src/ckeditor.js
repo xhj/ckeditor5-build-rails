@@ -25,6 +25,8 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
+import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
@@ -55,6 +57,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
+	TableProperties,
+	TableCellProperties,
 	RemoveFormat,
 	Font,
 	Indent,
@@ -62,6 +66,10 @@ ClassicEditor.builtinPlugins = [
 	AutoSave,
 	Alignment
 ];
+
+// eslint-disable-next-line no-undef
+const csrfMeta = document.querySelector('meta[name="csrf-token"]');
+const csrfToken = csrfMeta ? csrfMeta.getAttribute('content') : '';
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
@@ -115,13 +123,15 @@ ClassicEditor.defaultConfig = {
 		contentToolbar: [
 			'tableColumn',
 			'tableRow',
-			'mergeTableCells'
+			'mergeTableCells',
+			'tableProperties',
+			'tableCellProperties'
 		]
 	},
 	simpleUpload: {
 		uploadUrl: '/uploads',
 		headers: {
-			'X-CSRF-TOKEN': document.querySelector('meta[name=\'csrf-token\']').getAttribute('content'),
+			'X-CSRF-TOKEN': csrfToken,
 		}
 	},
 	fontColor: {
