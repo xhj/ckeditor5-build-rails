@@ -58,13 +58,14 @@
     "@ckeditor/ckeditor5-utils" "^19.0.0"
     lodash-es "^4.17.10"
 
-"@ckeditor/ckeditor5-basic-styles@^19.0.0":
-  version "19.0.0"
-  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-basic-styles/download/@ckeditor/ckeditor5-basic-styles-19.0.0.tgz#2ea138fda1d7c0ddcadd4f452cd60d2dd9ec9e17"
-  integrity sha1-LqE4/aHXwN3K3U9FLNYNLdnsnhc=
+"@ckeditor/ckeditor5-basic-styles@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-basic-styles/-/ckeditor5-basic-styles-25.0.0.tgz#b90342a1e72d284fd8f4b63397bdeaf747ceeb07"
+  integrity sha512-6llRTdhL6cg1uUHwzwliWuzRMDVVpecm4IVJtvndkegYrA21Gxte1+bgfLRM7tAZf3E8g/C3uyWjqlfBSWIWIA==
   dependencies:
-    "@ckeditor/ckeditor5-core" "^19.0.0"
-    "@ckeditor/ckeditor5-ui" "^19.0.0"
+    "@ckeditor/ckeditor5-core" "^25.0.0"
+    "@ckeditor/ckeditor5-typing" "^25.0.0"
+    "@ckeditor/ckeditor5-ui" "^25.0.0"
 
 "@ckeditor/ckeditor5-block-quote@^25.0.0":
   version "25.0.0"
@@ -361,6 +362,16 @@
     "@ckeditor/ckeditor5-engine" "^19.0.0"
     "@ckeditor/ckeditor5-utils" "^19.0.0"
     lodash-es "^4.17.10"
+
+"@ckeditor/ckeditor5-typing@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-typing/-/ckeditor5-typing-25.0.0.tgz#d6769fec83b7101a1b12d63bba826026c8a88937"
+  integrity sha512-yTMFYMQds1KF1I+xr5r3za4Glm2PyEWMM1EIJ8GXQGGwVap3lH/Nzoo963tXi5xRjuJoKxmpaF2h64n+b1tAIg==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^25.0.0"
+    "@ckeditor/ckeditor5-engine" "^25.0.0"
+    "@ckeditor/ckeditor5-utils" "^25.0.0"
+    lodash-es "^4.17.15"
 
 "@ckeditor/ckeditor5-ui@^19.0.0":
   version "19.0.0"
