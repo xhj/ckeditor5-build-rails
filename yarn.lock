@@ -245,13 +245,15 @@
     "@ckeditor/ckeditor5-utils" "^19.0.0"
     "@ckeditor/ckeditor5-widget" "^19.0.0"
 
-"@ckeditor/ckeditor5-indent@^19.0.0":
-  version "19.0.0"
-  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-indent/download/@ckeditor/ckeditor5-indent-19.0.0.tgz#2a547e5b6e58ed7e23c7997910d58e3b590adafe"
-  integrity sha1-KlR+W25Y7X4jx5l5ENWOO1kK2v4=
+"@ckeditor/ckeditor5-indent@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-indent/-/ckeditor5-indent-25.0.0.tgz#2192d9151baae94c3386fd5073812385919af93e"
+  integrity sha512-+9FdRaMZ+TBvOm1/Ywd25eMzbAKMG85NJnB/uCKGzTtL22+cDJyqwATRtd1DaAZ2Og19A28US3bTgnCJxSPSqQ==
   dependencies:
-    "@ckeditor/ckeditor5-core" "^19.0.0"
-    "@ckeditor/ckeditor5-utils" "^19.0.0"
+    "@ckeditor/ckeditor5-core" "^25.0.0"
+    "@ckeditor/ckeditor5-engine" "^25.0.0"
+    "@ckeditor/ckeditor5-ui" "^25.0.0"
+    "@ckeditor/ckeditor5-utils" "^25.0.0"
 
 "@ckeditor/ckeditor5-link@^19.0.0":
   version "19.0.0"
