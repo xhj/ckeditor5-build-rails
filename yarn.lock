@@ -66,14 +66,14 @@
     "@ckeditor/ckeditor5-core" "^19.0.0"
     "@ckeditor/ckeditor5-ui" "^19.0.0"
 
-"@ckeditor/ckeditor5-block-quote@^19.0.0":
-  version "19.0.0"
-  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-block-quote/download/@ckeditor/ckeditor5-block-quote-19.0.0.tgz#144ec5470bbdac243ca1ba987e9f29629516d47d"
-  integrity sha1-FE7FRwu9rCQ8obqYfp8pYpUW1H0=
+"@ckeditor/ckeditor5-block-quote@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-block-quote/-/ckeditor5-block-quote-25.0.0.tgz#502666be5d2de5c542e31b8b843d5ff2b5f8001c"
+  integrity sha512-1QQn8MxIaL+KZgy8b1vL2YI/tttjW6DwJ6gN11zJIc+dyiqzUUvXFeuhtsCLlB/7d1+kF2NtBpGFZSzbgi1GTA==
   dependencies:
-    "@ckeditor/ckeditor5-core" "^19.0.0"
-    "@ckeditor/ckeditor5-ui" "^19.0.0"
-    "@ckeditor/ckeditor5-utils" "^19.0.0"
+    "@ckeditor/ckeditor5-core" "^25.0.0"
+    "@ckeditor/ckeditor5-ui" "^25.0.0"
+    "@ckeditor/ckeditor5-utils" "^25.0.0"
 
 "@ckeditor/ckeditor5-ckfinder@^19.0.0":
   version "19.0.0"
@@ -111,6 +111,16 @@
     "@ckeditor/ckeditor5-engine" "^19.0.0"
     "@ckeditor/ckeditor5-utils" "^19.0.0"
     lodash-es "^4.17.10"
+
+"@ckeditor/ckeditor5-core@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-core/-/ckeditor5-core-25.0.0.tgz#15200aa5b7f1f4df8d1e891cb0916720f2bc39fa"
+  integrity sha512-fNeEiWlrIye5XfeMlGtOUNwq/JFvqIla10hGepunNcd/0rLRMVFcbqNY2UFrQvjn84ZaE3i322cyzm3jVt5ZVQ==
+  dependencies:
+    "@ckeditor/ckeditor5-engine" "^25.0.0"
+    "@ckeditor/ckeditor5-ui" "^25.0.0"
+    "@ckeditor/ckeditor5-utils" "^25.0.0"
+    lodash-es "^4.17.15"
 
 "@ckeditor/ckeditor5-dev-utils@^12.0.5", "@ckeditor/ckeditor5-dev-utils@^12.0.9":
   version "12.0.9"
@@ -172,6 +182,14 @@
   dependencies:
     "@ckeditor/ckeditor5-utils" "^19.0.0"
     lodash-es "^4.17.10"
+
+"@ckeditor/ckeditor5-engine@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-engine/-/ckeditor5-engine-25.0.0.tgz#1b1569a72614a6a4b58a7a2827b9c6ce8f2530b1"
+  integrity sha512-NgTzMMemO2qG6eH9NGHpcMNsvMhRtBuLz8w0fBsvgC2Ct4sYJIbbPudy8Sgswoy7kG9gHRqMrfnZYCWCdcoFhA==
+  dependencies:
+    "@ckeditor/ckeditor5-utils" "^25.0.0"
+    lodash-es "^4.17.15"
 
 "@ckeditor/ckeditor5-enter@^19.0.0":
   version "19.0.0"
@@ -341,6 +359,15 @@
     "@ckeditor/ckeditor5-utils" "^19.0.0"
     lodash-es "^4.17.10"
 
+"@ckeditor/ckeditor5-ui@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-ui/-/ckeditor5-ui-25.0.0.tgz#c53abbfd052ab4479a6c882480923d878cc7328c"
+  integrity sha512-q5mpk+KD7TbtmTKxG52dY+2MVI4Q/Ezs11hYVe0/BCBzJchEK+1IeRw+wxQ1LZwv3lJDmPvem0fWcFKJrDvDGA==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^25.0.0"
+    "@ckeditor/ckeditor5-utils" "^25.0.0"
+    lodash-es "^4.17.15"
+
 "@ckeditor/ckeditor5-undo@^19.0.0":
   version "19.0.0"
   resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-undo/download/@ckeditor/ckeditor5-undo-19.0.0.tgz#69ab24fc54a6aeeb75658ebca00893eb72caa068"
@@ -365,6 +392,13 @@
   integrity sha1-t/ql0DfF/WnTHdipu3spXAF6pHQ=
   dependencies:
     lodash-es "^4.17.10"
+
+"@ckeditor/ckeditor5-utils@^25.0.0":
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-utils/-/ckeditor5-utils-25.0.0.tgz#d06959b523ca070d25062be91c8b5bfb6ef20d73"
+  integrity sha512-lY6eW3ViQDqwDNXdvH8A1Z6r045hf2MqETPE3Gl1p28EB1xwta1pxpYqa8UFsDB5akQ/uWsRkpg94AJjMBuJ+A==
+  dependencies:
+    lodash-es "^4.17.15"
 
 "@ckeditor/ckeditor5-widget@^19.0.0":
   version "19.0.0"
@@ -3263,6 +3297,11 @@ lodash-es@^4.17.10:
   version "4.17.15"
   resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
   integrity sha1-Ib2Wg5NUQS8j16EDQOXqxu5FXXg=
+
+lodash-es@^4.17.15:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
