@@ -1,5 +1,6 @@
+
 /**
- * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+ * @license Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
@@ -33,6 +34,7 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import AutoSave from '@ckeditor/ckeditor5-autosave/src/autosave';
+
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -79,8 +81,6 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'strikethrough',
-			'code',
 			'fontColor',
 			'|',
 			'link',
@@ -97,17 +97,14 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'|',
 			'removeFormat',
-			''
 		]
 	},
 	heading: {
 		options: [
-			{ model: 'paragraph', title: 'Paragraph' },
-			{ model: 'heading2', view: 'h2', title: 'Heading 2' },
-			{ model: 'heading3', view: 'h3', title: 'Heading 3' },
-			{ model: 'heading4', view: 'h4', title: 'Heading 4' },
-			{ model: 'heading5', view: 'h5', title: 'Heading 5' },
-			{ model: 'heading6', view: 'h6', title: 'Heading 6' },
+			{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+			{ model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+			{ model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+			{ model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
 		]
 	},
 	image: {
