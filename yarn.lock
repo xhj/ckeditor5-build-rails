@@ -112,10 +112,10 @@
     "@ckeditor/ckeditor5-utils" "^25.0.0"
     lodash-es "^4.17.15"
 
-"@ckeditor/ckeditor5-dev-utils@^24.2.0":
-  version "24.2.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-24.2.0.tgz#b038259c1664a9ba42b7b1d218503a814953191c"
-  integrity sha512-RaqatfZvbocYGee2loefrdi0zcYma2m6n1fFng5ZhRl4GYFNWO1RVJTzAOUGzYdbWeStRki26X65Le00z/OyAQ==
+"@ckeditor/ckeditor5-dev-utils@^24.2.0", "@ckeditor/ckeditor5-dev-utils@^24.4.2":
+  version "24.4.2"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-24.4.2.tgz#d8a6420bcd2aedd71dac18d06cf7bae95b2b66cf"
+  integrity sha512-JvPVpapqRcWUCnBOuWN9N9nJAZn5mju4xTLAwxLUXImsp2cnMeWYvxALHb/seIZpiBq8xWd4s4QEYOnatARyOQ==
   dependencies:
     acorn "^6.2.1"
     acorn-walk "^6.2.0"
@@ -138,14 +138,15 @@
     through2 "^3.0.1"
 
 "@ckeditor/ckeditor5-dev-webpack-plugin@^24.2.0":
-  version "24.2.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-24.2.0.tgz#488bdc931ab1ce7d337aa65dfa6a5403a863604c"
-  integrity sha512-WCw1c0xrhInCJ9Bekd1NHANHJqOBO/FwycvbQI4gG1moypgyShZWDz58mIM0X8jKv2C1auvAB4Ye0VzAEtruvg==
+  version "24.4.2"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-24.4.2.tgz#87677afa8e455f94d2ade7e20dcf1220995b8b77"
+  integrity sha512-2Bt3rM1xW5yxDeJDCZ+aNIAeRxB8/BlR6Z8woI/imwwKwPAl6dAgOv+Ex9TmQ+1l1707dvN6NTu54WzCNfUNhA==
   dependencies:
-    "@ckeditor/ckeditor5-dev-utils" "^24.2.0"
+    "@ckeditor/ckeditor5-dev-utils" "^24.4.2"
     chalk "^4.0.0"
     rimraf "^3.0.2"
-    webpack-sources "^1.4.3"
+    semver "^7.3.4"
+    webpack-sources "^2.0.1"
 
 "@ckeditor/ckeditor5-easy-image@^25.0.0":
   version "25.0.0"
@@ -4437,6 +4438,13 @@ semver@^6.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
+semver@^7.3.4:
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.4.tgz#27aaa7d2e4ca76452f98d3add093a72c943edc97"
+  integrity sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
+  dependencies:
+    lru-cache "^6.0.0"
+
 serialize-javascript@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-4.0.0.tgz#b525e1238489a5ecfc42afacc3fe99e666f4b1aa"
@@ -4564,7 +4572,7 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-source-list-map@^2.0.0:
+source-list-map@^2.0.0, source-list-map@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npm.taobao.org/source-list-map/download/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha1-OZO9hzv8SEecyp6jpUeDXHwVSzQ=
@@ -5214,6 +5222,14 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   dependencies:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
+
+webpack-sources@^2.0.1:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-2.2.0.tgz#058926f39e3d443193b6c31547229806ffd02bac"
+  integrity sha512-bQsA24JLwcnWGArOKUxYKhX3Mz/nK1Xf6hxullKERyktjNMC4x8koOeaDNTA2fEJ09BdWLbM/iTW0ithREUP0w==
+  dependencies:
+    source-list-map "^2.0.1"
+    source-map "^0.6.1"
 
 webpack@^4.46.0:
   version "4.46.0"
