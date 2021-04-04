@@ -38,7 +38,7 @@
 		"@ckeditor/ckeditor5-font": "^25.0.0",
 		"@ckeditor/ckeditor5-heading": "^27.0.0",
 		"@ckeditor/ckeditor5-image": "^25.0.0",
-		"@ckeditor/ckeditor5-indent": "^25.0.0",
+		"@ckeditor/ckeditor5-indent": "^27.0.0",
 		"@ckeditor/ckeditor5-link": "^27.0.0",
 		"@ckeditor/ckeditor5-list": "^25.0.0",
 		"@ckeditor/ckeditor5-media-embed": "^25.0.0",
