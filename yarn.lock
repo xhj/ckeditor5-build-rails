@@ -318,6 +318,13 @@
     "@ckeditor/ckeditor5-ui" "^25.0.0"
     "@ckeditor/ckeditor5-utils" "^25.0.0"
 
+"@ckeditor/ckeditor5-indent@^27.0.0":
+  version "27.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-indent/-/ckeditor5-indent-27.0.0.tgz#5aff957a780fe1d1d492f5a89725cc7caa01a37d"
+  integrity sha512-JKfuLis9zstH+w5tNbYrDe/4nOjZJOgzjjlrlHFLy4pk8I9trDS0mUga89FB9gGL/dBJvmmTU2s5skHlzHJLNA==
+  dependencies:
+    ckeditor5 "^27.0.0"
+
 "@ckeditor/ckeditor5-link@^25.0.0":
   version "25.0.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-link/-/ckeditor5-link-25.0.0.tgz#425eeb0c08c39dbd6df95b309322321071f95c51"
