@@ -44,7 +44,7 @@
 		"@ckeditor/ckeditor5-media-embed": "^25.0.0",
 		"@ckeditor/ckeditor5-paragraph": "^25.0.0",
 		"@ckeditor/ckeditor5-paste-from-office": "^27.0.0",
-		"@ckeditor/ckeditor5-table": "^25.0.0",
+		"@ckeditor/ckeditor5-table": "^27.1.0",
 		"@ckeditor/ckeditor5-upload": "^27.0.0"
 	},
 	"devDependencies": {
