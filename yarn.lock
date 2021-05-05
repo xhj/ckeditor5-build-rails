@@ -276,11 +276,11 @@
     "@ckeditor/ckeditor5-utils" "^27.1.0"
 
 "@ckeditor/ckeditor5-paste-from-office@^27.0.0":
-  version "27.0.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-paste-from-office/-/ckeditor5-paste-from-office-27.0.0.tgz#e6ae3006906c4dd2b08aada28d1f0664e73e8f4a"
-  integrity sha512-ywvw9pJiLd3aYbnu/vPwmet9/dPa8B7kRljoxz9CiHBf/qN3QMXMd1vAtuVxN2ZtV4HIe36Opw4zINMcz7jiRQ==
+  version "27.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-paste-from-office/-/ckeditor5-paste-from-office-27.1.0.tgz#925fb468aa99ed5f26105f464548ad7da6bc2e85"
+  integrity sha512-G+pQPSXH0QDHBKLZ+xQ3aaqgyqF3kRqBZHW/KWaJBzEmqFrgQSeGfuFnQmrQNInOuTJ/9wLF2ZRiyLZP6rbzow==
   dependencies:
-    ckeditor5 "^27.0.0"
+    ckeditor5 "^27.1.0"
 
 "@ckeditor/ckeditor5-remove-format@^27.1.0":
   version "27.1.0"
@@ -295,15 +295,6 @@
   integrity sha512-OuQ8aZTQYQ/Dnv1B5pYtT5tkce+uJ3vC3yZh1v+g2y1xsD+8EHfdvA22n9RxYwBi0kQWpVT+yNC1a1ugYOQ4Kw==
   dependencies:
     ckeditor5 "^27.1.0"
-
-"@ckeditor/ckeditor5-select-all@^27.0.0":
-  version "27.0.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-select-all/-/ckeditor5-select-all-27.0.0.tgz#77b80ec7334359c1831e5ca633e971065aeb42e5"
-  integrity sha512-JhWQMZYX96sJcqBt1qf7nLUn1IPEgKgffXKeiwwtTlgcQJeMrWMEkolybtlff0bedk+yqzzDlm9MHPUiFZNyiw==
-  dependencies:
-    "@ckeditor/ckeditor5-core" "^27.0.0"
-    "@ckeditor/ckeditor5-ui" "^27.0.0"
-    "@ckeditor/ckeditor5-utils" "^27.0.0"
 
 "@ckeditor/ckeditor5-select-all@^27.1.0":
   version "27.1.0"
@@ -388,7 +379,7 @@
     ckeditor5 "^27.1.0"
     lodash-es "^4.17.15"
 
-"@ckeditor/ckeditor5-undo@^27.0.0", "@ckeditor/ckeditor5-undo@^27.1.0":
+"@ckeditor/ckeditor5-undo@^27.1.0":
   version "27.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-undo/-/ckeditor5-undo-27.1.0.tgz#1ccfba764e3be0a21c9e17882920f246e41072cb"
   integrity sha512-Z/iBrfcXgYOj5NBgqZqodvQ0tMhIqaErMamIX2DU0XCUbcWDomU+z5gHAHj6JzmX8C3cwpOhivOvgX2A+dUvAg==
@@ -1019,7 +1010,7 @@ chrome-trace-event@^1.0.2:
   dependencies:
     tslib "^1.9.0"
 
-ckeditor5@^27.0.0, ckeditor5@^27.1.0:
+ckeditor5@^27.1.0:
   version "27.1.0"
   resolved "https://registry.yarnpkg.com/ckeditor5/-/ckeditor5-27.1.0.tgz#9a5ceea2ba2582b0e11f0f95f6956ff1ddfc118d"
   integrity sha512-XBoMqrML4mmQozSBXgZfFUBJPN3ErTls0wQhP8YkOiglhNXSBaLIE07QKcB0/H/lA2luqxijJGSXw7sr5SWE1A==
