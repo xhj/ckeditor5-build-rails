@@ -80,7 +80,7 @@
     "@ckeditor/ckeditor5-utils" "^27.1.0"
     lodash-es "^4.17.15"
 
-"@ckeditor/ckeditor5-dev-utils@^24.0.0", "@ckeditor/ckeditor5-dev-utils@^24.4.2":
+"@ckeditor/ckeditor5-dev-utils@^24.0.0":
   version "24.4.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-24.4.2.tgz#d8a6420bcd2aedd71dac18d06cf7bae95b2b66cf"
   integrity sha512-JvPVpapqRcWUCnBOuWN9N9nJAZn5mju4xTLAwxLUXImsp2cnMeWYvxALHb/seIZpiBq8xWd4s4QEYOnatARyOQ==
@@ -105,12 +105,37 @@
     terser-webpack-plugin "^3.0.2"
     through2 "^3.0.1"
 
-"@ckeditor/ckeditor5-dev-webpack-plugin@^24.0.0":
-  version "24.4.2"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-24.4.2.tgz#87677afa8e455f94d2ade7e20dcf1220995b8b77"
-  integrity sha512-2Bt3rM1xW5yxDeJDCZ+aNIAeRxB8/BlR6Z8woI/imwwKwPAl6dAgOv+Ex9TmQ+1l1707dvN6NTu54WzCNfUNhA==
+"@ckeditor/ckeditor5-dev-utils@^25.2.1":
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-25.2.1.tgz#24f4c8f0ae25a3796dd0fb21adaecd1d31e94667"
+  integrity sha512-B5UzwVuyQqciMRWKHz/chP6A5IuGHzS0OcP/r+/FRGtPZcHS3DXSJY+aGRCSHwjcTsHajgYQRAOAgDCoA+wVXQ==
   dependencies:
-    "@ckeditor/ckeditor5-dev-utils" "^24.4.2"
+    acorn "^6.2.1"
+    acorn-walk "^6.2.0"
+    chalk "^3.0.0"
+    cssnano "^4.0.0"
+    del "^5.0.0"
+    escodegen "^1.9.0"
+    fs-extra "^8.1.0"
+    javascript-stringify "^1.6.0"
+    pofile "^1.0.9"
+    postcss "^7.0.17"
+    postcss-import "^12.0.0"
+    postcss-loader "^3.0.0"
+    postcss-mixins "^6.2.0"
+    postcss-nesting "^7.0.0"
+    raw-loader "^4.0.1"
+    shelljs "^0.8.1"
+    style-loader "^1.2.1"
+    terser-webpack-plugin "^3.0.2"
+    through2 "^3.0.1"
+
+"@ckeditor/ckeditor5-dev-webpack-plugin@^25.2.1":
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-25.2.1.tgz#e28641c14f880471911a3e8810a24bb5d12e40be"
+  integrity sha512-2xWomyUB007yjWy+bpn+ERvi4hJElCxr7AXKvahFQsNMZiJTp/3qVlTC0CRsJ2ETSQmkIDKXaVntjBXu8xuUcQ==
+  dependencies:
+    "@ckeditor/ckeditor5-dev-utils" "^25.2.1"
     chalk "^4.0.0"
     rimraf "^3.0.2"
     semver "^7.3.4"
