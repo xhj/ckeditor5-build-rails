@@ -80,7 +80,7 @@
     "@ckeditor/ckeditor5-utils" "^27.1.0"
     lodash-es "^4.17.15"
 
-"@ckeditor/ckeditor5-dev-utils@^24.0.0", "@ckeditor/ckeditor5-dev-utils@^24.4.2":
+"@ckeditor/ckeditor5-dev-utils@^24.4.2":
   version "24.4.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-24.4.2.tgz#d8a6420bcd2aedd71dac18d06cf7bae95b2b66cf"
   integrity sha512-JvPVpapqRcWUCnBOuWN9N9nJAZn5mju4xTLAwxLUXImsp2cnMeWYvxALHb/seIZpiBq8xWd4s4QEYOnatARyOQ==
@@ -95,6 +95,31 @@
     javascript-stringify "^1.6.0"
     pofile "^1.0.9"
     postcss "^7.0.17"
+    postcss-import "^12.0.0"
+    postcss-loader "^3.0.0"
+    postcss-mixins "^6.2.0"
+    postcss-nesting "^7.0.0"
+    raw-loader "^4.0.1"
+    shelljs "^0.8.1"
+    style-loader "^1.2.1"
+    terser-webpack-plugin "^3.0.2"
+    through2 "^3.0.1"
+
+"@ckeditor/ckeditor5-dev-utils@^25.2.6":
+  version "25.2.6"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-25.2.6.tgz#2f2ec946410b25bbb30f00fe8a00a69a4e50e16d"
+  integrity sha512-G03yzx8vbOlPlED5B7JdGyWef8hqiwu9ovhpN2yn3eAv6L6ax/tSdTP9UbovQCY9cBQm2Gxvu3Nu71nTSwQvkw==
+  dependencies:
+    acorn "^6.2.1"
+    acorn-walk "^6.2.0"
+    chalk "^3.0.0"
+    cssnano "^4.0.0"
+    del "^5.0.0"
+    escodegen "^1.9.0"
+    fs-extra "^8.1.0"
+    javascript-stringify "^1.6.0"
+    pofile "^1.0.9"
+    postcss "^7.0.36"
     postcss-import "^12.0.0"
     postcss-loader "^3.0.0"
     postcss-mixins "^6.2.0"
@@ -3762,7 +3787,7 @@ postcss-value-parser@^4.0.2:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.27:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.27, postcss@^7.0.36:
   version "7.0.36"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
   integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
