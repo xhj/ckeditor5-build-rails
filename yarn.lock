@@ -80,7 +80,7 @@
     "@ckeditor/ckeditor5-utils" "^27.1.0"
     lodash-es "^4.17.15"
 
-"@ckeditor/ckeditor5-dev-utils@^24.0.0", "@ckeditor/ckeditor5-dev-utils@^24.4.2":
+"@ckeditor/ckeditor5-dev-utils@^24.4.2":
   version "24.4.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-24.4.2.tgz#d8a6420bcd2aedd71dac18d06cf7bae95b2b66cf"
   integrity sha512-JvPVpapqRcWUCnBOuWN9N9nJAZn5mju4xTLAwxLUXImsp2cnMeWYvxALHb/seIZpiBq8xWd4s4QEYOnatARyOQ==
@@ -105,12 +105,49 @@
     terser-webpack-plugin "^3.0.2"
     through2 "^3.0.1"
 
+"@ckeditor/ckeditor5-dev-utils@^25.4.3":
+  version "25.4.3"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-25.4.3.tgz#0ee7589daacf8a9ec192bea9b6943bf8cdbf1145"
+  integrity sha512-2eUOD5Abx6SdycTC2XMvctK+tNYSkQbJC2W3UKYqTSGluAoGRLnuHw9y1MNFDY8qCRzAp1KpSlx44hH51vegEA==
+  dependencies:
+    "@ckeditor/ckeditor5-dev-webpack-plugin" "^25.4.3"
+    acorn "^6.2.1"
+    acorn-walk "^6.2.0"
+    chalk "^3.0.0"
+    cssnano "^4.0.0"
+    del "^5.0.0"
+    escodegen "^1.9.0"
+    fs-extra "^8.1.0"
+    javascript-stringify "^1.6.0"
+    pofile "^1.0.9"
+    postcss "^7.0.36"
+    postcss-import "^12.0.0"
+    postcss-loader "^3.0.0"
+    postcss-mixins "^6.2.0"
+    postcss-nesting "^7.0.0"
+    raw-loader "^4.0.1"
+    shelljs "^0.8.1"
+    style-loader "^1.2.1"
+    terser-webpack-plugin "^3.0.2"
+    through2 "^3.0.1"
+
 "@ckeditor/ckeditor5-dev-webpack-plugin@^24.0.0":
   version "24.4.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-24.4.2.tgz#87677afa8e455f94d2ade7e20dcf1220995b8b77"
   integrity sha512-2Bt3rM1xW5yxDeJDCZ+aNIAeRxB8/BlR6Z8woI/imwwKwPAl6dAgOv+Ex9TmQ+1l1707dvN6NTu54WzCNfUNhA==
   dependencies:
     "@ckeditor/ckeditor5-dev-utils" "^24.4.2"
+    chalk "^4.0.0"
+    rimraf "^3.0.2"
+    semver "^7.3.4"
+    webpack-sources "^2.0.1"
+
+"@ckeditor/ckeditor5-dev-webpack-plugin@^25.4.3":
+  version "25.4.3"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-25.4.3.tgz#bdfe8171c024faf73dccc2aa1ae3345fafe86a83"
+  integrity sha512-b27ZRI1W8adr9fHvjmBZ8b7gC17E8KK3A0HCV6IAg8brC51+OgCMUeQ/3dRpi4KhJs8cVm/NW3O+9XgG7o9fdg==
+  dependencies:
+    "@ckeditor/ckeditor5-dev-utils" "^25.4.3"
     chalk "^4.0.0"
     rimraf "^3.0.2"
     semver "^7.3.4"
@@ -3762,7 +3799,7 @@ postcss-value-parser@^4.0.2:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.27:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.27, postcss@^7.0.36:
   version "7.0.36"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
   integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
